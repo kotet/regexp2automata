@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>regexp2automata</title>
+    <script src="lite.render.js" defer></script>
+    <script src="viz.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <h1>regexp2automata</h1>
+        <p>正規表現を非決定性オートマトンにします。</p>
+        <label for="regexp">正規表現:</label>
+        <input name="regexp" type="text" size="50" value="abc(def+abc)*">
+    </nav>
+    <output>
+        <h2>結果 (graphviz)</h2>
+        <textarea id="graphviz-source" cols="50" rows="5"></textarea>
+        <div id="graphviz-rendered"></div>
+    </output>
+</body>
+
+</html>
